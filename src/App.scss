@@ -1,0 +1,41 @@
+@import "./Styles/mixins";
+
+
+// @font-face {
+//   font-family: "Avenir";
+//   src: url("./Fonts/AvenirLTStd-Medium.otf"); 
+// }
+
+@font-face{
+  font-family: "Ubuntu";
+  src: url("./Fonts/Ubuntu-Regular.ttf") ;
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face{
+  font-family: "Ubuntu med";
+  src: url("./Fonts/Ubuntu-Medium.ttf") ;
+  font-weight: medium;
+  font-style: normal;
+}
+
+@font-face{
+  font-family: "Ubuntu bold";
+  src: url("./Fonts/Ubuntu-Bold.ttf") ;
+}
+
+*, *::before, *::after {
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+.App {
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding:20px;
+  font-family: Ubuntu;
+  height:100vh;
+}

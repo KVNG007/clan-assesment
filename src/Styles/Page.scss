@@ -1,0 +1,53 @@
+@import "./mixins";
+
+.pages {
+    display:flex;
+    font-family: "Ubuntu";
+    flex-direction: column;
+    gap: 30px;
+    background-image: url("/assets/images/bg-sidebar-desktop.svg");
+    background-size: cover;
+    height:100%;
+    width: 320px;
+    padding: 40px 30px;
+    border-radius: .75em;
+    transition: all .3s;
+
+
+    section {
+        display:flex;
+        gap: 30px;
+        color:$White;
+
+        span {
+            font-size: 1em;
+            font-weight: 700;
+            width: 45px;
+            height: 45px;
+            display: flex;
+            place-content: center;
+            align-items: center;
+            border: 1px solid $White ;
+            border-radius: 50%;
+        }
+
+        aside {
+            text-align: left;
+            display: flex;
+            justify-content: space-around;
+            flex-direction: column;
+            // place-content: center;
+            
+
+            p {
+                font-size: .95em;
+                font-weight: normal;
+            }
+            h3 {
+                font-family: "Ubuntu med";
+                font-size: 1.1em;
+                letter-spacing: 2.5px;
+            }
+        }
+    }
+}

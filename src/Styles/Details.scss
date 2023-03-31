@@ -1,0 +1,13 @@
+@import "./mixins";
+
+.Details {
+    width: 75%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    place-content: center;
+    background-color: $White;
+    // background-color: green;
+    // margin-left: auto;
+
+}

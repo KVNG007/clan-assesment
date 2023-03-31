@@ -1,0 +1,108 @@
+@import "./mixins";
+
+.Info {
+    width: 70%;
+    height:100%;
+    padding: 40px 20px 0px 20px;
+    background-color: $White;
+    // margin-left: 100px;
+
+    h1 {
+        color:$color-blue;
+        font-size:2.5em;
+        font-family: "Ubuntu bold";
+    }
+
+    h4 {
+        font-size: 1.2em;
+        font-weight: 300;
+        margin: 10px 0px;
+        color:black;
+        opacity: .55;
+    }
+
+    form {
+        // margin-top:30px;
+        padding:30px 0px;
+        display: flex;
+        flex-direction: column;
+        gap:20px;
+
+        section {
+
+            .label {
+                width: 100%;
+                display:flex;
+                flex-direction: row;
+                justify-content: space-between;
+            }
+
+            label {
+                // display: block;
+                font-size:1.1em;
+                font-family:"ubuntu med";
+                color: $Marine-blue;
+                padding:7px 0px;
+            }
+
+            span {
+                font-family: "Ubuntu";
+                font-weight: 600;
+                margin-top: 10px ;
+                margin-left: auto;
+                color: $Strawberry-red;
+                font-size:1em;
+            }
+
+            input {
+                width:100%;
+                height:56px;
+                font-size: 1.2em;
+                color: $Marine-blue !important;
+                font-family: "Ubuntu med";
+                border:1px solid $Cool-gray;
+                padding:10px 15px;
+                border-radius: .5em;
+                
+                
+                &::placeholder {
+                    font-size: 1em;
+                    font-family:"ubuntu med";
+                    opacity: .7;
+                }
+
+                &:active, &:focus {
+                    outline:1px solid $Purplish-blue;
+                    border: none;
+
+                }
+
+                
+            }
+        }
+
+        button {
+            display: flex;
+            width:120px;
+            height: 54px;
+            background-color: $Marine-blue;
+            color: $White;
+            align-items: center;
+            place-content: center;
+            font-family: "Ubuntu med";
+            border:none;
+            border-radius: .5em;
+            margin-top:93px;
+            margin-left:auto;
+            text-decoration: none;
+            cursor:pointer;
+    
+            &:hover {
+                opacity : .9;
+            }
+        }
+    }
+
+    
+
+}

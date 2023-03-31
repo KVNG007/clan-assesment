@@ -1,0 +1,157 @@
+@import "./mixins";
+
+.Plan {
+    width: 70%;
+    height:100%;
+    padding: 40px 20px 0px 20px;
+    background-color: $White;
+    // margin-left: 100px;
+
+    h1 {
+        color:$color-blue;
+        font-size:2.5em;
+        font-family: "Ubuntu bold";
+    }
+
+    h4 {
+        font-size: 1.2em;
+        font-weight: 300;
+        margin: 10px 0px;
+        color:black;
+        opacity: .55;
+    }
+
+
+    section {
+        display: grid;
+        margin: 30px  0px;
+        padding-top: 20px;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: space-between;
+        gap:35px;
+
+        aside {
+            display:flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding:25px;
+            height:220px;
+            border: 1px solid $Cool-gray;
+            border-radius: 1em;
+            cursor: pointer;
+
+            img {
+                width: 50px;
+            }
+
+            h3 {
+                font-size: 1.3em;
+                color: $Marine-blue;
+            }
+            P { 
+                margin:5px 0px;
+                color: $Cool-gray;
+                font-family: "Ubuntu med";
+            }
+            h6 {
+                font-size: .8em;
+                padding-top: 5px;
+                color:$Marine-blue;
+            }
+        }
+
+        .active{
+            border: 2px solid $Purplish-blue !important;
+        }
+    }
+
+
+
+
+    .select {
+        width:100%;
+        padding: 10px;
+         background-color: $Alabaster;
+        border-radius: .5em;
+        display: flex;
+        align-items: center;
+        place-content: center;
+
+        &__cont {
+            width:220px;
+            display: flex;
+            justify-content: space-around ;
+            align-items: center;
+
+            span {
+                color: $Cool-gray;
+                font-family: "Ubuntu med";
+                transition: all .2s ease-in;
+            }
+
+            .holder{
+                position: relative;
+                width:40px;
+                height: 22px;
+                background-color:  $Marine-blue;
+                border-radius: 1em;
+
+                .move {
+                    position: absolute;
+                    width: 14px;
+                    height: 14px;
+                    border-radius: 50%;
+                    background-color: $Magnolia;
+                    top: calc(50% - 7px);
+                    left: 4px;
+                    cursor: pointer;
+                    transition: all .2s ease-in-out !important;
+                }
+            }
+
+            .selected {
+                transition: all .2s ease-in;
+                color: $Marine-blue;
+            }
+        }
+    }
+
+
+   footer {
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    margin-top: 100px;
+
+    .back {
+        text-decoration: none;
+        font-family: "Ubuntu med";
+        font-size: 1.2em;
+        color: $Cool-gray;
+        transition: all .3s;
+
+        &:hover{
+            color: $Marine-blue;
+        }
+    }
+
+    .next {
+        display: flex;
+        align-items: center;
+        place-content: center;
+        font-family: "Ubuntu med";
+        background-color: $Marine-blue;
+        width:120px;
+        height: 54px;
+        border-radius: .5em;
+        margin-left:auto;
+        text-decoration: none;
+        color: $White;
+
+        &:hover {
+            opacity : .9;
+        }
+    }
+   }
+
+}

@@ -1,0 +1,120 @@
+@import "./mixins";
+
+.Summary {
+    width: 70%;
+    height:100%;
+    padding: 40px 20px 0px 20px;
+    background-color: $White;
+    // margin-left: 100px;
+
+    h1 {
+        color:$color-blue;
+        font-size:2.5em;
+        font-family: "Ubuntu bold";
+    }
+
+    h4 {
+        font-size: 1.2em;
+        font-weight: 300;
+        margin: 10px 0px;
+        color:black;
+        opacity: .55;
+    }
+
+    h3 {
+        color: $Cool-gray;
+        margin:5px 0px;
+    }
+    span {
+        color: $Marine-blue;
+    }
+    .first a {
+        color: $Cool-gray;
+    }
+
+
+    main {
+        background-color: $Alabaster;
+        padding: 20px;
+        border-radius: .5em;
+
+        section {
+            display: flex;
+            justify-content: space-between;
+            margin:10px 0px;
+
+            aside {
+                display: flex;
+                flex-direction: column;
+            }
+            
+
+        }
+
+        hr {
+            border: 1px solid $Light-gray;
+            height: 1px;
+            margin:10px 0px;
+        }
+
+        .first {
+            h3 {
+                color: $Marine-blue;
+            }
+            
+            span {
+            font-weight:600 !important;
+            }
+        }
+
+
+
+    }
+
+    .total {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 30px;
+        align-items: center;
+        
+    }
+
+
+   footer {
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    margin-top: 75px;
+
+    .back {
+        text-decoration: none;
+        font-family: "Ubuntu med";
+        font-size: 1.2em;
+        color: $Cool-gray;
+        transition: all .3s;
+
+        &:hover{
+            color: $Marine-blue;
+        }
+    }
+
+    .next {
+        display: flex;
+        align-items: center;
+        place-content: center;
+        font-family: "Ubuntu med";
+        background-color: $Purplish-blue;
+        width:120px;
+        height: 54px;
+        border-radius: .5em;
+        margin-left:auto;
+        text-decoration: none;
+        color: $White;
+
+        &:hover {
+            opacity : .9;
+        }
+    }
+   }
+
+}
