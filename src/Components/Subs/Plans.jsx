@@ -24,8 +24,9 @@ const Plans = () => {
 
 
   return (
-    <div className='Plan'>Plans
+    <div className='Plan'>
 
+      <div className="Plan__cont">
       <h1>Select your plan.</h1>
       <h4>You have the option of monthly or yearly billing.</h4>
 
@@ -83,6 +84,7 @@ const Plans = () => {
 
           <span className={ billing !== "Monthly"  ? "selected" : ""}>Yearly</span>
         </div>
+      </div>
       </div>
 
       <footer>

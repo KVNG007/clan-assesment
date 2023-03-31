@@ -53,6 +53,8 @@ const Summary = () => {
 
   return (
     <div className="Summary">
+      
+      <div className='Summary__cont'>
       <h1>Finishing up</h1>
       <h4>Double-check everything looks OK before confirming.</h4>
 
@@ -60,7 +62,7 @@ const Summary = () => {
         <section className='first'>
             <aside>
               <h3>{`${option} (${billing})`}</h3>
-              <NavLink>Change</NavLink>
+              <NavLink to="/plans" onClick={()=> dispatch(setPage("2"))}>Change</NavLink>
             </aside>
             <span>{planPrices[billing][option][0]}</span>
         </section>
@@ -88,9 +90,7 @@ const Summary = () => {
           <h3>{`Total (per ${billing == "Monthly" ? "month" : "year"})`}</h3>
           <span>{`+$${totalPrice()}/${billing == "mo" ? "month" : "yr"}`}</span>
       </div>
-
-      
-
+      </div>
 
       <footer>
         <NavLink className="back" onClick={()=> dispatch(setPage("3"))} to="/add-ons">Go Back </NavLink>

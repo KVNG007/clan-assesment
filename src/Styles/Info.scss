@@ -8,7 +8,7 @@
     // margin-left: 100px;
 
     h1 {
-        color:$color-blue;
+        color:$Marine-blue;
         font-size:2.5em;
         font-family: "Ubuntu bold";
     }
@@ -103,6 +103,120 @@
         }
     }
 
+    .fixer {
+        display:none;
+    }
+
     
 
+}
+
+@media(max-width: 480px) {
+    .Info {
+        position: absolute;
+        background-color: transparent;
+        width: 100%;
+        height: 600px;
+        top:-10%;
+        padding: 0px;
+        border-radius: .5em;
+        // margin-left: 100px;
+
+        &__cont{
+            width: 90%;
+            padding: 20px;
+            margin: auto;
+            background-color: $White;
+        }
+
+    
+        h1 {
+            font-size:2em;
+        }
+    
+        form {
+            padding:10px 0px;
+            display: flex;
+            gap:10px;
+    
+            section {
+    
+                span {
+                    font-family: "Ubuntu";
+                    font-weight: 600;
+                    margin-top: 10px ;
+                    margin-left: auto;
+                    color: $Strawberry-red;
+                    font-size:.8em;
+                }
+    
+                input {
+                    width:100%;
+                    height:45px;
+                    font-size: 1.2em;
+                    color: $Marine-blue !important;
+                    font-family: "Ubuntu med";
+                    border:1px solid $Cool-gray;
+                    padding:10px 15px;
+                    border-radius: .5em;
+    
+                    
+                }
+            }
+    
+            button {
+                display: none;
+                width:120px;
+                height: 54px;
+                background-color: $Marine-blue;
+                color: $White;
+                align-items: center;
+                place-content: center;
+                font-family: "Ubuntu med";
+                border:none;
+                border-radius: .5em;
+                margin-top:0px;
+                margin-left:auto;
+                text-decoration: none;
+                cursor:pointer;
+        
+                &:hover {
+                    opacity : .9;
+                }
+            }
+
+           
+        }
+    
+        .fixer {
+            display: block !important;
+            width: 100%;
+            padding: 10px;
+            padding:20px;
+            background-color: $White;
+            margin-top: 85px !important;
+
+            button {
+                display: flex;
+                width:120px;
+                height: 54px;
+                background-color: $Marine-blue;
+                color: $White;
+                align-items: center;
+                place-content: center;
+                font-family: "Ubuntu med";
+                border:none;
+                border-radius: .5em;
+                margin-left:auto;
+                text-decoration: none;
+                cursor:pointer;
+        
+                &:hover {
+                    opacity : .9;
+                }
+            }
+        }
+        
+    
+    }
 }

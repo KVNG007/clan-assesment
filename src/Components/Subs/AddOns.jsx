@@ -22,6 +22,7 @@ const AddOns = () => {
 
   return (
     <div className='AddOns'>
+      <div className="AddOns__cont">
       <h1>Pick add-ons</h1>
       <h4>Add-ons help enhance your gaming experience.</h4>
 
@@ -79,6 +80,7 @@ const AddOns = () => {
         </aside>
 
       </section>
+      </div>
 
 
       <footer>

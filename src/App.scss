@@ -39,3 +39,12 @@
   font-family: Ubuntu;
   height:100vh;
 }
+
+@media (max-width: 480px) {
+  .App {
+    flex-direction: column;
+    padding:0;
+    height:100vh;
+    justify-content:start;
+  }
+}

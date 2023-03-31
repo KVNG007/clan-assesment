@@ -8,7 +8,7 @@
     // margin-left: 100px;
 
     h1 {
-        color:$color-blue;
+        color: $Marine-blue;
         font-size:2.5em;
         font-family: "Ubuntu bold";
     }
@@ -128,4 +128,137 @@
     }
    }
 
+}
+
+
+
+
+
+@media( max-width: 480px) {
+    .AddOns {
+        position:absolute;
+        width: 100%;
+        height: 600px;
+        bottom: 0;
+        padding: 0;
+        background-color: transparent;
+        // margin-left: 100px;
+    
+        &__cont {
+            width:90%;
+            margin: auto;
+            background-color: $White;
+            padding:20px;
+            border-radius: .5em;
+        }
+
+        h1 {
+            color: $Marine-blue;
+            font-size:2em;
+            font-family: "Ubuntu bold";
+        }
+    
+    
+        section {
+            display: flex;
+            flex-direction: column;
+            margin-top:20px;
+            gap:15px;
+            padding-bottom: 25px;
+    
+            aside {
+                padding:15px 20px;
+                height:80px;
+    
+                .check {
+                    display: flex;
+                    margin-right: 25px;
+                    width: 20px;
+                    height: 20px;
+                    border: 1px solid $Cool-gray ;
+                    border-radius: .3em;
+                    align-items: center;
+                    place-content: center;
+                    background-color: $White;
+                    transition: all .2s ease-in;
+                }
+    
+                .checked {
+                    transition: all .2s ease-in;
+                    background-color: $Purplish-blue;
+                }
+    
+                .details {
+                    margin-left: 0px;
+
+                    h3 {
+                        padding-bottom:0px;
+                        font-size: .85em;
+                    }
+                    p{
+                        padding-top: 0px;
+                        font-size: .85em;
+                        font-size: .85em;
+                    }
+                }
+    
+                span {
+                    margin-left: auto;
+                    color:$Purplish-blue;
+                    font-size: .75em;
+                }
+    
+    
+            }
+    
+            .selected {
+                border: 2px solid $Purplish-blue;
+                transition: all .2s ease-in;
+            }
+    
+              
+    
+                
+        }
+    
+    
+       footer {
+        display: flex;
+        justify-content: space-between;
+        align-items:center;
+        margin-top: 150px;
+        padding: 20px;
+    
+        .back {
+            text-decoration: none;
+            font-family: "Ubuntu med";
+            font-size: 1.2em;
+            color: $Cool-gray;
+            transition: all .3s;
+    
+            &:hover{
+                color: $Marine-blue;
+            }
+        }
+    
+        .next {
+            display: flex;
+            align-items: center;
+            place-content: center;
+            font-family: "Ubuntu med";
+            background-color: $Marine-blue;
+            width:120px;
+            height: 54px;
+            border-radius: .5em;
+            margin-left:auto;
+            text-decoration: none;
+            color: $White;
+    
+            &:hover {
+                opacity : .9;
+            }
+        }
+       }
+    
+    }
 }

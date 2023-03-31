@@ -54,7 +54,8 @@ const Info = () => {
 
   return (
     <div className='Info'>
-      <h1>Personal info</h1>  
+     <div className='Info__cont'>
+     <h1>Personal info</h1>  
       <h4>Please provide name, email address and phone number.</h4>
 
       <form>
@@ -90,6 +91,13 @@ const Info = () => {
         </button>
 
       </form>
+     </div>
+
+      <div className='fixer'>
+        <button onClick={(e)=> navigateTo(e)}>
+          Next Step
+        </button>
+      </div>
     </div>
   )
 }

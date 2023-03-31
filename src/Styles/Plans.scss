@@ -8,7 +8,7 @@
     // margin-left: 100px;
 
     h1 {
-        color:$color-blue;
+        color:$Marine-blue;
         font-size:2.5em;
         font-family: "Ubuntu bold";
     }
@@ -154,4 +154,118 @@
     }
    }
 
+}
+
+
+
+@media (max-width: 480px) {
+    .Plan {
+        position: absolute;
+        width: 100%;
+        height:600px;
+        padding: 0;
+        bottom: 0;
+        background-color:transparent;
+        &__cont {
+            width: 90%;
+            margin:auto;
+            padding: 20px;
+            border-radius: .5em;
+            background-color:  $White;
+        }
+    
+        h1 {
+            font-size:2em;
+        }
+    
+    
+    
+        section {
+            display: grid;
+            margin: 10px  0px;
+            padding-top: 20px;
+            grid-template-columns: repeat(1, 1fr);
+            justify-content: space-between;
+            gap:15px;
+    
+            aside {
+                flex-direction: row;
+                justify-content:start;
+                padding:25px;
+                height:85px;
+                border-radius: 1em;
+                align-items: center;
+                cursor: pointer;
+    
+                img {
+                    margin-right:25px;
+                }
+
+                h3 {
+                    font-size: 1em;
+                    color: $Marine-blue;
+                }
+                P { 
+                    margin:3px 0px;
+                    font-family: "Ubuntu med";
+                }
+    
+            }
+    
+            .active{
+                border: 2px solid $Purplish-blue !important;
+            }
+        }
+    
+    
+    
+    
+    
+    
+       footer {
+
+        position: absolute;
+        display: flex;
+        justify-content: space-between;
+        align-items:center;
+        width: 100%;
+        // margin-top: 200px;
+        padding:20px;
+        // bottom: 0px;
+        background-color: $White;
+        // padding:0px 20px;
+    
+        .back {
+            text-decoration: none;
+            font-family: "Ubuntu med";
+            font-size: 1.2em;
+            color: $Cool-gray;
+            transition: all .3s;
+    
+            &:hover{
+                color: $Marine-blue;
+            }
+        }
+    
+        .next {
+            display: flex;
+            align-items: center;
+            place-content: center;
+            font-family: "Ubuntu med";
+            background-color: $Marine-blue;
+            width:120px;
+            height: 54px;
+            border-radius: .5em;
+            margin-left:auto;
+            text-decoration: none;
+            color: $White;
+    
+            &:hover {
+                opacity : .9;
+            }
+        }
+       }
+    
+    }
+    
 }
